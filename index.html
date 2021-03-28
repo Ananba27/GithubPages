@@ -4,63 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <title>Cronicas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/psychoeye.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <h1>Anti Coding Club</h1>
-        <img src="assets/img/Computer-256.png" alt="" width="70">
+    
+    <header class="banner">
+        <span>
+            <h1>Cronicas</h1>
+            <h3>Noticias del futuro</h3>
+        </span>
+        <img src="assets/img/psychoeye.jpg" alt="Un gato fuera de foco" class="logo">
     </header>
     <nav>
-        <button>Quienes somos</button>
-        <button>Nuestra misión</button>
-        <button>Contáctanos</button>
-        <button>Portafolios</button>
+        <a href="#articulos">Noticias</a>
+        <a href="#accedeatucuenta">Accede a tu cuenta</a>
+        <a href="#contactanos">Contactanos</a>
     </nav>
+    </marquee>
     <main>
-        <section>
-            <div class="profilepic">
-                <img src="assets/img/edgar2.jpg" alt="">
-                <h3>Edgar Ascanio</h3>
-                <p>Scrum Master</p>
-                <a href="">Más información</a>
-            </div>
-            <div class="profilepic">
-                <img src="assets/img/oriana2.jpg" alt="">
-                <h3>Oriana Contreras</h3>
-                <p>Programming Engineer</p>
-                <a href="">Más información</a>
-            </div>
+        <section id="articulos">
+            <article>  
+                <img src="assets/img/araucania.jpg" alt="Bosque radioactivo" class="img-art">
+                <span>
+                    <h2>Invierno nuclear en la Araucania.</h2>
+                    <h4>A mediados del 2029.</h4>
+                    <p>Así como lo escuchan, según expertos de la Universidad de Talca, la gran nube radioactiva generada por la explosión del reactor 6 de la planta nuclear de Lonquimay estaría causando estragos en la fauna y flora de Novena Region.</p>
+                    <p>La nube de polvo radioactivo deficultaría e impediría totalmente el paso de la luz solar, lo cual provocaría la muerte de los seres vivos que realizan la fotosíntesis. Estos seres, los productores, son el eslabón más bajo de la
+                        cadena trófica o cadena alimentaria, con lo cual también se extinguirían los demás seres vivos: herbívoros, carnívoros y descomponedores, aseguran expertos. Además, el ambiente sería irrespirable, por lo que muchos animales
+                        morirían directamente.</p>
+                    <p>Se espera esta región sea abierta al turismo alienigena para mediados del 2543.</p>
+                    <h4>Por Ray Douglas Bradbury</h4>
+                </span>
+            </article>
+            <article>
+                <img src="assets/img/pollomutante.jpg" alt="Pollo mutante" class="img-art">
+                <span>
+                    <h2>Rancaguinos logran domar pollo mutante.</h2>
+                    <h4>15 de Junio de 548d.c.</h4>
+                    <p>Dos estudiantes de Biología Animal de la Universidad de Santiago se habrían aventurado en la ya abandonada ciudad de Chillan para buscar y domesticar al mitico animal.</p>
+                    <p>Se teoriza que las mutaciones en el pollo habrían sido causadas por la experimentación genética realizada por AgroSuper a mediados del siglo 24.</p>
+                    <p>Estudiantes cuentan que el pollo sería amistoso y hasta "inteligente".</p>
+                    <p>—A veces me ayuda a calcular mi renta anual en la pagina del SII.— Cuenta el estudiante.</p>
+                    <h4>Por Julio Verne</h4>
+                </span>
+            </article>
+            <footer class="more-art">
+                <a href="#">Mostrar más noticias...</a>
+            </footer>
         </section>
-        <section>
-            <div class="profilepic">
-                <img src="assets/img/deydre2.jpg" alt="">
-                <h3>Deydré Colmenares</h3>
-                <p>Front-End Developer</p>
-                <a href="">Más información</a>
-            </div>
-            <div class="profilepic">
-                <img src="assets/img/andres2.jpg" alt="">
-                <h3>Andrés Barroso</h3>
-                <p>Front-End Developer</p>
-                <a href="">Más información</a>
-            </div>
-        </section>
+        <aside id="accedeatucuenta" class="barralateral">
+            <h2>Accede a tu cuenta!</h2>
+            <h4>Usuario:</h4>
+            <input type="text">
+            <h4>Contraseña:</h4>
+            <input type="text">
+            <button class="butt">Acceder!</button>
+        </aside>
     </main>
-    <footer>
-        <ul class=rrss>
-            <li><i class="fab fa-instagram"></i><span class="rs">Instagram</span></li>
-            <li><i class="fab fa-facebook-f"></i><span class="rs">Facebook</span></li>
-            <li><i class="fab fa-twitter"></i><span class="rs">Twitter</span></li>
-        </ul>
+    <footer id="contactanos" class="piedepag">
+        <span>
+            <strong>Direccion:</strong>
+            <p>Avenida Siempre Viva 743</p>
+        </span>
+        <span>
+            <strong>Telefono:</strong>
+            <p>+55 5 5555 5555</p>
+        </span>
+        <span>
+            <strong>Horario de Atencion:</strong>
+            <p>8:00 a 16:00hrs.</p>
+        </span>
     </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.3.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
 </body>
 </html>
-
-
-
-
-
-
