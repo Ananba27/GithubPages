@@ -5,28 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronicas</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/bem.css">
     <link rel="shortcut icon" href="assets/img/psychoeye.ico" type="image/x-icon">
 </head>
-<body>
-    
-    <header class="banner">
-        <span>
-            <h1>Cronicas</h1>
-            <h3>Noticias del futuro</h3>
+<body> 
+    <header class="header">
+        <span class="header__span">
+            <h1 class="header__span__h1">Cronicas</h1>
+            <h3 class="header__span__h3">Noticias del futuro</h3>
         </span>
-        <img src="assets/img/psychoeye.jpg" alt="Un gato fuera de foco" class="logo">
+        <img class="header__img" src="assets/img/psychoeye.jpg" alt="Logo de Cronicas">
     </header>
-    <nav>
-        <a href="#articulos">Noticias</a>
-        <a href="#accedeatucuenta">Accede a tu cuenta</a>
-        <a href="#contactanos">Contactanos</a>
+    <nav class="nav">
+        <a class="nav__a" href="#articulos">Noticias</a>
+        <a class="nav__a" href="#accedeatucuenta">Accede a tu cuenta</a>
+        <a class="nav__a" href="#contactanos">Contactanos</a>
     </nav>
-    </marquee>
-    <main>
-        <section id="articulos">
-            <article>  
-                <img src="assets/img/araucania.jpg" alt="Bosque radioactivo" class="img-art">
+    <main class="main">
+        <section class="main__section" id="articulos">
+            <article class="main__section__article">  
+                <img class="main__section__article__img" src="assets/img/araucania.jpg" alt="Bosque radioactivo">
                 <span>
                     <h2>Invierno nuclear en la Araucania.</h2>
                     <h4>A mediados del 2029.</h4>
@@ -38,8 +36,8 @@
                     <h4>Por Ray Douglas Bradbury</h4>
                 </span>
             </article>
-            <article>
-                <img src="assets/img/pollomutante.jpg" alt="Pollo mutante" class="img-art">
+            <article class="main__section__article">
+                <img class="main__section__article__img" src="assets/img/pollomutante.jpg" alt="Pollo mutante">
                 <span>
                     <h2>Rancaguinos logran domar pollo mutante.</h2>
                     <h4>15 de Junio de 548d.c.</h4>
@@ -50,40 +48,32 @@
                     <h4>Por Julio Verne</h4>
                 </span>
             </article>
-            <footer class="more-art">
-                <a href="#">Mostrar más noticias...</a>
+            <footer class="main__section__footer">
+                <a class="main__section__footer__a" href="#">Mostrar más noticias...</a>
             </footer>
         </section>
-        <aside id="accedeatucuenta" class="barralateral">
+        <aside class="main__aside" id="accedeatucuenta">
             <h2>Accede a tu cuenta!</h2>
             <h4>Usuario:</h4>
             <input type="text">
             <h4>Contraseña:</h4>
-            <input type="text">
-            <button class="butt">Acceder!</button>
+            <input type="text"><br>
+            <button class="main__aside__button">Acceder!</button>
         </aside>
     </main>
-    <footer id="contactanos" class="piedepag">
-        <span>
+    <footer class="footer" id="contactanos">
+        <span class="footer__span">
             <strong>Direccion:</strong>
             <p>Avenida Siempre Viva 743</p>
         </span>
-        <span>
+        <span class="footer__span">
             <strong>Telefono:</strong>
             <p>+55 5 5555 5555</p>
         </span>
-        <span>
+        <span class="footer__span">
             <strong>Horario de Atencion:</strong>
             <p>8:00 a 16:00hrs.</p>
         </span>
     </footer>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.3.0/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-    https://firebase.google.com/docs/web/setup#available-libraries -->
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
 </body>
 </html>
