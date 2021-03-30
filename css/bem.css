@@ -27,7 +27,7 @@ html {
 .nav__a:link, .nav__a:visited {
     color: white;
 }
-.nav__a:hover, .nav__active {
+.nav__a:hover, .nav__a:active {
     color: red;
 }
 .main {
@@ -67,8 +67,8 @@ html {
     box-sizing: border-box;
 }
 .main__aside__button {
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .footer {
     border: white solid 1px;
@@ -91,6 +91,8 @@ html {
     .main__aside {
         width: 100%;
         border-left: 1px solid white;
+        border-top: none;
+        border-bottom: none;
     }
 }
 @media (max-width: 500px) {
