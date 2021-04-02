@@ -1,0 +1,12 @@
+.nav {
+    border: white solid 1px;
+    border-top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    &__a:link, &__a:visited {
+        color: white;
+    }
+    &__a:hover, &__a:active {
+        color: #0575e6;
+    }
+}

@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+html {
+  background-color: black;
+  color: white;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  border: white solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__span {
+  margin-left: 12px;
+}
+
+.header__img {
+  width: 140px;
+  height: 140px;
+  margin: 10px;
+  min-height: 100%;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__section {
+  border-bottom: 0;
+  border-right: 0;
+  width: 70%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main__section__article {
+  margin: 10px auto;
+  padding: 10px;
+  border: white solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__section__article__span {
+  margin-left: 10px;
+}
+
+.main__section__footer {
+  margin: 10px;
+  border: white solid 1px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.main__section__footer__a:link, .main__section__footer__a:visited {
+  color: white;
+}
+
+.main__section__footer__a:hover, .main__section__footer__a:active {
+  color: #0575e6;
+}
+
+.main__aside {
+  margin-top: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#0575e6), to(#021c79));
+  background: linear-gradient(to right, #0575e6, #021c79);
+  width: 30%;
+  padding: 5px;
+  height: 50%;
+}
+
+.main__aside__bluebox {
+  text-align: center;
+  border: 1px #021c79 solid;
+  background-color: black;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main__aside__bluebox__h1 {
+  margin: 0 auto;
+}
+
+.main__aside__bluebox__div {
+  margin: 15px auto;
+}
+
+.main__aside__bluebox__input {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 30px;
+  background-color: #0575e6;
+  border-color: #0575e6;
+  color: white;
+}
+
+.main__aside__bluebox__input:hover {
+  background-color: #021c79;
+  border-color: #021c79;
+  cursor: pointer;
+}
+
+.main__aside__bluebox__input:active {
+  background-color: #0575e6;
+  border-color: #0575e6;
+}
+
+@media (max-width: 768px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__section {
+    width: 100%;
+  }
+  .main__section__article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__aside {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.footer {
+  border: white solid 1px;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.nav {
+  border: white solid 1px;
+  border-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.nav__a:link, .nav__a:visited {
+  color: white;
+}
+
+.nav__a:hover, .nav__a:active {
+  color: #0575e6;
+}
+/*# sourceMappingURL=main.css.map */

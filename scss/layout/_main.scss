@@ -1,0 +1,89 @@
+.main {
+    display: flex;
+    &__section {
+        border-bottom: 0;
+        border-right: 0;
+        width: 70%;
+        box-sizing: border-box;
+        &__article {
+            margin: 10px auto;
+            padding: 10px;
+            border: white solid 1px;
+            display: flex;
+            align-items: center;
+            &__span {
+                margin-left: 10px;
+            }
+        }
+        &__footer {
+            margin: 10px;
+            border: white solid 1px;
+            text-align: center;
+            font-size: 1.3rem;
+            &__a:link, &__a:visited {
+                color: white;
+            }
+            &__a:hover, &__a:active {
+                color: #0575e6;
+            }
+        }
+    }
+    &__aside {
+        margin-top: 10px;
+        background: linear-gradient(to right, #0575e6, #021c79);
+        width: 30%;
+        padding: 5px;
+        height: 50%;
+        &__bluebox {
+            text-align: center;
+            border: 1px #021c79 solid;
+            background-color: black;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 30px 0;
+            box-sizing: border-box;
+            &__h1 {
+                margin: 0 auto;
+            }
+            &__div {
+                margin: 15px auto;
+            }
+            &__input {
+                transition-duration: 0.4s;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 10px 30px;
+                background-color: #0575e6;
+                border-color: #0575e6;
+                color: white;
+                &:hover {
+                    background-color: #021c79;
+                    border-color: #021c79;
+                    cursor: pointer;
+                }
+                &:active {
+                    background-color: #0575e6;
+                    border-color: #0575e6;
+                }
+            }
+        }
+    }
+}
+@include mq(768px) {
+    .main {
+        flex-direction: column;
+        &__section {
+            width: 100%;
+            &__article {
+                flex-direction: column;
+            }
+        }
+        &__aside {
+            box-sizing: border-box;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
+

@@ -5,10 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronicas</title>
-    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="shortcut icon" href="assets/img/psychoeye.ico" type="image/x-icon">
+    <!-- <script type="text/javascript" src="js/warpspeed.js"></script> -->
 </head>
-<body> 
+<body onload="autoLoad()">
+    <!-- <div style="position:fixed; z-index:0; top:0; left:0; width:100%; height:100%;">
+        <canvas id="canvas" style="width:100%; height:100%;"></canvas>
+        <script type="text/javascript">
+            new WarpSpeed("canvas", {
+                targetSpeed: 6.8,
+                speedAdjFactor: 0.07,
+                speedWhileLoading: 18
+            });
+        </script>
+    </div> -->
     <header class="header">
         <span class="header__span">
             <h1 class="header__span__h1">Cronicas</h1>
@@ -25,7 +36,7 @@
         <section class="main__section" id="articulos">
             <article class="main__section__article">  
                 <img class="main__section__article__img" src="assets/img/araucania.jpg" alt="Bosque radioactivo">
-                <span>
+                <span class="main__section__article__span">
                     <h2>Invierno nuclear en la Araucania.</h2>
                     <h4>A mediados del 2029.</h4>
                     <p>Así como lo escuchan, según expertos de la Universidad de Talca, la gran nube radioactiva generada por la explosión del reactor 6 de la planta nuclear de Lonquimay estaría causando estragos en la fauna y flora de Novena Region.</p>
@@ -38,7 +49,7 @@
             </article>
             <article class="main__section__article">
                 <img class="main__section__article__img" src="assets/img/pollomutante.jpg" alt="Pollo mutante">
-                <span>
+                <span class="main__section__article__span">
                     <h2>Rancaguinos logran domar pollo mutante.</h2>
                     <h4>15 de Junio de 548d.c.</h4>
                     <p>Dos estudiantes de Biología Animal de la Universidad de Santiago se habrían aventurado en la ya abandonada ciudad de Chillan para buscar y domesticar al mitico animal.</p>
@@ -53,12 +64,18 @@
             </footer>
         </section>
         <aside class="main__aside" id="accedeatucuenta">
-            <h2>Accede a tu cuenta!</h2>
-            <h4>Usuario:</h4>
-            <input type="text">
-            <h4>Contraseña:</h4>
-            <input type="text"><br>
-            <button class="main__aside__button">Acceder!</button>
+            <div class="main__aside__bluebox">
+                <h2 class="main__aside__bluebox__h1">Accede a tu cuenta!</h2>
+                <div class="main__aside__bluebox__div">
+                    <label>Usuario:</label><br>
+                    <input type="text">
+                </div>
+                <div class="main__aside__bluebox__div">
+                    <label>Contraseña:</label><br>
+                    <input type="text">
+                </div>
+                <input class="main__aside__bluebox__input" type="submit" value="Entrar"/>
+            </div>
         </aside>
     </main>
     <footer class="footer" id="contactanos">

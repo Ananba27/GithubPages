@@ -1,0 +1,13 @@
+.footer {
+    border: white solid 1px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+@include mq(500px) {
+    .footer {
+        flex-direction: column;
+    }
+}

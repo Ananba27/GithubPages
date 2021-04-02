@@ -1,0 +1,15 @@
+.header {
+    border: white solid 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__span {
+        margin-left: 12px
+    }
+    &__img {
+        width: 140px;
+        height: 140px;
+        margin: 10px;
+        min-height: 100%;
+    }
+}
