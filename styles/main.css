@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 html {
-  background-color: black;
   color: white;
   width: 100%;
   font-family: 'Roboto', sans-serif;
@@ -37,14 +36,13 @@ html {
 }
 
 .main__section {
-  border-bottom: 0;
-  border-right: 0;
   width: 70%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .main__section__article {
+  background-color: black;
   margin: 10px auto;
   padding: 10px;
   border: white solid 1px;
@@ -77,6 +75,7 @@ html {
 
 .main__aside {
   margin-top: 10px;
+  margin-left: 5px;
   background: -webkit-gradient(linear, left top, right top, from(#0575e6), to(#021c79));
   background: linear-gradient(to right, #0575e6, #021c79);
   width: 30%;
@@ -151,7 +150,7 @@ html {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
-    margin-bottom: 10px;
+    margin: 10px auto;
   }
 }
 
